@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Web Project</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
   <body>
     <!-- Navigation -->
@@ -294,31 +298,45 @@
         </form>
       </div>
     </section>
-    <!-- Previous Sections -->
-    <main class="container">
-      <section id="intro" class="intro-section">
-        <h1 class="section-title">Introduction</h1>
-        <p>
-          This section introduces the basic layout of the site. Containers help
-          center the content and limit maximum width for readability.
-        </p>
-        <p>
-          Section titles have a decorative underline using a pseudo-element.
-        </p>
-      </section>
+    <footer class="footer">
+      <div class="container footer-content">
+        <!-- Column 1: About -->
+        <div class="footer-column">
+          <h4>About Me</h4>
+          <p>
+            Passionate web developer creating responsive and modern websites.
+            Skilled in HTML, CSS, JavaScript, and more.
+          </p>
+        </div>
 
-      <section id="features" class="features-section">
-        <h2 class="section-title">Features</h2>
-        <p>
-          Each section should have a heading and content. We will use this
-          structure consistently for all future sections.
-        </p>
-        <ul>
-          <li>Typography utilities</li>
-          <li>Containers and section structure</li>
-          <li>Reusable CSS patterns</li>
-        </ul>
-      </section>
-    </main>
+        <!-- Column 2: Quick Links -->
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#media">Media</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Social -->
+        <div class="footer-column">
+          <h4>Follow Me</h4>
+          <div class="social-icons">
+            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2025 Your Name. All Rights Reserved.
+      </div>
+    </footer>
   </body>
 </html>
