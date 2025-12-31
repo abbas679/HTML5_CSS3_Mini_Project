@@ -532,3 +532,33 @@ blockquote footer {
 .gallery-overlay p {
   font-size: 1rem;
 }
+.media-section {
+  padding: 5rem 0;
+  background: var(--white);
+}
+
+.media-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 3rem;
+}
+
+.media-item {
+  background: var(--light-color);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+.media-item h3 {
+  margin-bottom: 1.5rem;
+  color: var(--dark-color);
+  text-align: center;
+}
+
+.media-item video,
+.media-item .audio-player {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
