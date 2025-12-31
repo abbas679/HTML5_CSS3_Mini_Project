@@ -3,339 +3,552 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Web Project</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta
+      name="description"
+      content="Comprehensive HTML5 & CSS3 Portfolio Project"
+    />
+    <meta name="keywords" content="HTML5, CSS3, Web Development, Portfolio" />
+    <meta name="author" content="Your Name" />
+    <title>HTML5 & CSS3 Mini Project - Portfolio</title>
+
+    <!-- Font Awesome for Icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+
+    <!-- External CSS File -->
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- Navigation -->
-    <header class="main-nav">
+    <!-- NAVIGATION SECTION (Anchor Tags, Positions) -->
+    <nav class="main-nav">
       <div class="nav-container">
         <div class="logo">
-          <h2>MyWebsite</h2>
+          <h2>MyPortfolio</h2>
         </div>
         <ul class="nav-links">
-          <li><a href="#intro">Home</a></li>
-          <li><a href="#features">Features</a></li>
+          <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#media">Media</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
-    </header>
+    </nav>
 
-    <!-- Hero Section -->
-    <section class="hero-section">
+    <!-- HERO SECTION (Headings, Paragraph, Background) -->
+    <section id="home" class="hero-section">
       <div class="hero-content">
-        <h1 class="main-heading">Welcome to My Website</h1>
+        <!-- Heading Tags: h1, h2, h3, h4, h5, h6 -->
+        <h1 class="main-heading">Welcome to My Portfolio</h1>
+        <h2 class="sub-heading">Web Developer & Designer</h2>
+
+        <!-- Paragraph Tags -->
         <p class="hero-description">
-          This is a hero section with interactive buttons and simple animations.
+          I create stunning websites using HTML5 and CSS3.<br />
+          <!-- Break Tag -->
+          Passionate about clean code and beautiful design.
         </p>
 
-        <!-- Hero Buttons -->
+        <!-- Inline and Block Elements -->
         <div class="hero-buttons">
-          <a href="#features" class="btn btn-primary">Explore Features</a>
-          <a href="#contact" class="btn btn-secondary">Contact Us</a>
+          <a href="#contact" class="btn btn-primary">Get Started</a>
+          <a href="#about" class="btn btn-secondary">Learn More</a>
         </div>
       </div>
     </section>
-    <section class="about-section" id="about">
-      <div class="container about-content">
-        <!-- About Text -->
-        <div class="about-text">
-          <h3>About Me</h3>
-          <p>
-            Hello! I'm a passionate web developer with a love for creating
-            interactive and user-friendly websites. I focus on clean design,
-            responsive layouts, and optimized code.
-          </p>
-          <p>
-            <abbr title="HyperText Markup Language">HTML</abbr>,
-            <abbr title="Cascading Style Sheets">CSS</abbr>, and
-            <abbr title="JavaScript">JS</abbr> are my core tools.
-          </p>
-          <blockquote>
-            "Simplicity is the soul of efficiency."
-            <footer>— Austin Freeman</footer>
-          </blockquote>
-        </div>
 
-        <!-- About Image -->
-        <div class="about-image">
-          <img
-            src="images/profile.jpg"
-            alt="Profile Image"
-            class="profile-img"
-          />
+    <!-- ABOUT SECTION (Quotation, Citation, Text Styling) -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about-content">
+          <div class="about-text">
+            <h3>Professional Web Developer</h3>
+            <p>
+              I am a passionate web developer with expertise in HTML5 and CSS3.
+              I believe in creating <strong>responsive</strong>,
+              <em>accessible</em>, and <mark>user-friendly</mark> websites.
+            </p>
+
+            <!-- Quotation and Citation Tags -->
+            <blockquote cite="https://www.example.com">
+              <p>
+                "Design is not just what it looks like and feels like. Design is
+                how it works."
+              </p>
+              <footer>— <cite>Steve Jobs</cite></footer>
+            </blockquote>
+
+            <!-- More HTML5 text elements -->
+            <p>
+              <abbr title="HyperText Markup Language">HTML</abbr> is the
+              standard markup language for creating web pages.
+            </p>
+
+            <p>
+              My current project uses <code>display: flex</code> for layout.
+            </p>
+
+            <!-- Comment in HTML -->
+            <!-- This is a comment and won't be displayed in the browser -->
+          </div>
+
+          <!-- Image Tag with attributes -->
+          <div class="about-image">
+            <img
+              src="https://via.placeholder.com/400x400"
+              alt="Profile Picture"
+              title="Developer Profile"
+              width="400"
+              height="400"
+              class="profile-img"
+            />
+          </div>
         </div>
       </div>
     </section>
-    <section class="skills-section" id="skills">
+
+    <!-- SKILLS SECTION (Tables, Lists) -->
+    <section id="skills" class="skills-section">
       <div class="container">
         <h2 class="section-title">My Skills</h2>
 
-        <!-- Skills Grid -->
+        <!-- Unordered List -->
         <div class="skills-lists">
-          <!-- Skill Card 1 -->
           <div class="list-container">
-            <h3>Frontend Development</h3>
+            <h3>Frontend Technologies</h3>
             <ul class="skill-list">
-              <li><i class="fas fa-check-circle"></i> HTML5</li>
-              <li><i class="fas fa-check-circle"></i> CSS3</li>
-              <li><i class="fas fa-check-circle"></i> JavaScript</li>
-              <li><i class="fas fa-check-circle"></i> React</li>
+              <li><i class="fab fa-html5"></i> HTML5</li>
+              <li><i class="fab fa-css3-alt"></i> CSS3</li>
+              <li><i class="fab fa-js"></i> JavaScript</li>
+              <li><i class="fab fa-react"></i> React</li>
             </ul>
           </div>
 
-          <!-- Skill Card 2 -->
+          <!-- Ordered List -->
           <div class="list-container">
-            <h3>Backend Development</h3>
-            <ul class="skill-list">
-              <li><i class="fas fa-check-circle"></i> Node.js</li>
-              <li><i class="fas fa-check-circle"></i> Express.js</li>
-              <li><i class="fas fa-check-circle"></i> SQL & NoSQL</li>
-            </ul>
-          </div>
-
-          <!-- Skill Card 3 -->
-          <div class="list-container">
-            <h3>Other Skills</h3>
-            <ul class="learning-list">
-              <li>Git & GitHub</li>
+            <h3>Learning Path</h3>
+            <ol class="learning-list">
+              <li>HTML Basics</li>
+              <li>CSS Fundamentals</li>
               <li>Responsive Design</li>
-              <li>UI/UX Basics</li>
-            </ul>
+              <li>JavaScript Programming</li>
+              <li>Modern Frameworks</li>
+            </ol>
+          </div>
+
+          <!-- Description List -->
+          <div class="list-container">
+            <h3>Terminology</h3>
+            <dl class="definition-list">
+              <dt>HTML</dt>
+              <dd>HyperText Markup Language - Structure of web pages</dd>
+
+              <dt>CSS</dt>
+              <dd>Cascading Style Sheets - Styling and layout</dd>
+
+              <dt>Responsive Design</dt>
+              <dd>Design that adapts to different screen sizes</dd>
+            </dl>
           </div>
         </div>
 
-        <!-- Skills Table -->
+        <!-- Table Tag -->
         <div class="skills-table">
-          <h3>Skill Proficiency</h3>
+          <h3>Skills Proficiency Table</h3>
           <table class="data-table">
             <thead>
               <tr>
                 <th>Skill</th>
                 <th>Level</th>
-                <th>Experience (Years)</th>
+                <th>Years</th>
+                <th>Projects</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>HTML</td>
-                <td>Expert</td>
-                <td>5</td>
+                <td>HTML5</td>
+                <td>Advanced</td>
+                <td>5+</td>
+                <td>50+</td>
               </tr>
               <tr>
-                <td>CSS</td>
-                <td>Expert</td>
-                <td>5</td>
+                <td>CSS3</td>
+                <td>Advanced</td>
+                <td>5+</td>
+                <td>50+</td>
               </tr>
               <tr>
                 <td>JavaScript</td>
-                <td>Advanced</td>
-                <td>4</td>
+                <td>Intermediate</td>
+                <td>3</td>
+                <td>30+</td>
               </tr>
               <tr>
-                <td>React</td>
-                <td>Intermediate</td>
-                <td>2</td>
+                <td>Responsive Design</td>
+                <td>Advanced</td>
+                <td>4</td>
+                <td>40+</td>
               </tr>
             </tbody>
             <tfoot>
               <tr>
-                <td colspan="3">Updated: 2025</td>
+                <td colspan="3">Total Projects</td>
+                <td>170+</td>
               </tr>
             </tfoot>
           </table>
         </div>
       </div>
     </section>
-    <section class="gallery-section" id="gallery">
+
+    <!-- GALLERY SECTION (Grid System, Flexbox, Images) -->
+    <section id="gallery" class="gallery-section">
       <div class="container">
-        <h2 class="section-title">Gallery</h2>
+        <h2 class="section-title">Project Gallery</h2>
 
+        <!-- Grid System -->
         <div class="gallery-grid">
-          <!-- Gallery Item 1 -->
           <div class="gallery-item">
-            <img src="images/gallery1.jpg" alt="Gallery Image 1" />
+            <img src="https://via.placeholder.com/350x250" alt="Project 1" />
             <div class="gallery-overlay">
-              <h4>Project One</h4>
-              <p>Frontend Development</p>
+              <h4>E-commerce Site</h4>
+              <p>Built with HTML5 & CSS3</p>
             </div>
           </div>
-
-          <!-- Gallery Item 2 -->
           <div class="gallery-item">
-            <img src="images/gallery2.jpg" alt="Gallery Image 2" />
+            <img src="https://via.placeholder.com/350x250" alt="Project 2" />
             <div class="gallery-overlay">
-              <h4>Project Two</h4>
-              <p>Backend Development</p>
+              <h4>Portfolio Website</h4>
+              <p>Responsive Design</p>
             </div>
           </div>
-
-          <!-- Gallery Item 3 -->
           <div class="gallery-item">
-            <img src="images/gallery3.jpg" alt="Gallery Image 3" />
+            <img src="https://via.placeholder.com/350x250" alt="Project 3" />
             <div class="gallery-overlay">
-              <h4>Project Three</h4>
-              <p>UI/UX Design</p>
+              <h4>Blog Platform</h4>
+              <p>Modern Layout</p>
             </div>
           </div>
-
-          <!-- Gallery Item 4 -->
           <div class="gallery-item">
-            <img src="images/gallery4.jpg" alt="Gallery Image 4" />
+            <img src="https://via.placeholder.com/350x250" alt="Project 4" />
             <div class="gallery-overlay">
-              <h4>Project Four</h4>
-              <p>Full Stack App</p>
+              <h4>Landing Page</h4>
+              <p>Creative Design</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://via.placeholder.com/350x250" alt="Project 5" />
+            <div class="gallery-overlay">
+              <h4>Dashboard UI</h4>
+              <p>Interactive Elements</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://via.placeholder.com/350x250" alt="Project 6" />
+            <div class="gallery-overlay">
+              <h4>Mobile App Design</h4>
+              <p>User-Centric</p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="media-section" id="media">
+
+    <!-- MEDIA SECTION (Video, Audio Tags) -->
+    <section id="media" class="media-section">
       <div class="container">
-        <h2 class="section-title">Media</h2>
+        <h2 class="section-title">Media Gallery</h2>
 
         <div class="media-content">
-          <!-- Media Item 1: Video -->
+          <!-- Video Tag with controls -->
           <div class="media-item">
-            <h3>Intro Video</h3>
-            <video controls>
-              <source src="media/video1.mp4" type="video/mp4" />
+            <h3>Promotional Video</h3>
+            <video
+              controls
+              width="100%"
+              height="300"
+              poster="https://via.placeholder.com/640x360"
+            >
+              <source src="videos/sample.mp4" type="video/mp4" />
+              <source src="videos/sample.webm" type="video/webm" />
               Your browser does not support the video tag.
             </video>
           </div>
 
-          <!-- Media Item 2: Video -->
-          <div class="media-item">
-            <h3>Demo Video</h3>
-            <video controls>
-              <source src="media/video2.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-
-          <!-- Media Item 3: Audio -->
+          <!-- Audio Tag with controls -->
           <div class="media-item">
             <h3>Background Music</h3>
-            <audio class="audio-player" controls>
-              <source src="media/audio1.mp3" type="audio/mpeg" />
-              Your browser does not support the audio element.
-            </audio>
-          </div>
-
-          <!-- Media Item 4: Audio -->
-          <div class="media-item">
-            <h3>Podcast</h3>
-            <audio class="audio-player" controls>
-              <source src="media/audio2.mp3" type="audio/mpeg" />
-              Your browser does not support the audio element.
+            <audio controls class="audio-player">
+              <source src="audio/sample.mp3" type="audio/mpeg" />
+              <source src="audio/sample.ogg" type="audio/ogg" />
+              Your browser does not support the audio tag.
             </audio>
           </div>
         </div>
       </div>
     </section>
-    <section class="contact-section" id="contact">
+
+    <!-- CONTACT SECTION (Form Tags, Input Types, Input Attributes) -->
+    <section id="contact" class="contact-section">
       <div class="container">
         <h2 class="section-title">Contact Me</h2>
 
-        <form class="contact-form">
-          <!-- Name -->
+        <!-- Form with various input types and attributes -->
+        <form class="contact-form" action="#" method="POST">
+          <!-- Text Input with attributes -->
           <div class="form-group">
-            <label for="name">Name <span class="required">*</span></label>
+            <label for="fullname"
+              >Full Name: <span class="required">*</span></label
+            >
             <input
               type="text"
-              id="name"
-              name="name"
-              placeholder="Your full name"
+              id="fullname"
+              name="fullname"
+              placeholder="Enter your full name"
               required
+              size="30"
+              minlength="3"
+              maxlength="50"
             />
           </div>
 
-          <!-- Email -->
+          <!-- Email Input -->
           <div class="form-group">
-            <label for="email">Email <span class="required">*</span></label>
+            <label for="email">Email: <span class="required">*</span></label>
             <input
               type="email"
               id="email"
               name="email"
-              placeholder="Your email address"
+              placeholder="your.email@example.com"
               required
             />
           </div>
 
-          <!-- Subject -->
+          <!-- Tel Input -->
           <div class="form-group">
-            <label for="subject">Subject</label>
+            <label for="phone">Phone Number:</label>
             <input
-              type="text"
-              id="subject"
-              name="subject"
-              placeholder="Message subject"
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="+1-234-567-8900"
+              pattern="[0-9+-\s]+"
             />
           </div>
 
-          <!-- Message -->
+          <!-- URL Input -->
           <div class="form-group">
-            <label for="message">Message <span class="required">*</span></label>
+            <label for="website">Website/Portfolio:</label>
+            <input
+              type="url"
+              id="website"
+              name="website"
+              placeholder="https://yourwebsite.com"
+            />
+          </div>
+
+          <!-- Number Input with min and max -->
+          <div class="form-group">
+            <label for="age">Age:</label>
+            <input
+              type="number"
+              id="age"
+              name="age"
+              min="18"
+              max="100"
+              placeholder="18"
+            />
+          </div>
+
+          <!-- Date Input -->
+          <div class="form-group">
+            <label for="birthdate">Birth Date:</label>
+            <input type="date" id="birthdate" name="birthdate" />
+          </div>
+
+          <!-- Color Input -->
+          <div class="form-group">
+            <label for="color">Favorite Color:</label>
+            <input type="color" id="color" name="color" value="#3498db" />
+          </div>
+
+          <!-- Range Input -->
+          <div class="form-group">
+            <label for="experience">Experience Level (1-10):</label>
+            <input
+              type="range"
+              id="experience"
+              name="experience"
+              min="1"
+              max="10"
+              value="5"
+            />
+            <output for="experience">5</output>
+          </div>
+
+          <!-- File Input with multiple attribute -->
+          <div class="form-group">
+            <label for="files">Upload Files:</label>
+            <input
+              type="file"
+              id="files"
+              name="files"
+              multiple
+              accept=".pdf,.doc,.docx"
+            />
+          </div>
+
+          <!-- Radio Buttons -->
+          <div class="form-group">
+            <label>Preferred Contact Method:</label>
+            <div class="radio-group">
+              <label>
+                <input
+                  type="radio"
+                  name="contact-method"
+                  value="email"
+                  checked
+                />
+                Email
+              </label>
+              <label>
+                <input type="radio" name="contact-method" value="phone" />
+                Phone
+              </label>
+              <label>
+                <input type="radio" name="contact-method" value="both" />
+                Both
+              </label>
+            </div>
+          </div>
+
+          <!-- Checkboxes -->
+          <div class="form-group">
+            <label>Services Interested In:</label>
+            <div class="checkbox-group">
+              <label>
+                <input type="checkbox" name="services" value="web-design" />
+                Web Design
+              </label>
+              <label>
+                <input type="checkbox" name="services" value="development" />
+                Development
+              </label>
+              <label>
+                <input type="checkbox" name="services" value="consulting" />
+                Consulting
+              </label>
+              <label>
+                <input type="checkbox" name="services" value="maintenance" />
+                Maintenance
+              </label>
+            </div>
+          </div>
+
+          <!-- Select Dropdown -->
+          <div class="form-group">
+            <label for="budget">Project Budget:</label>
+            <select id="budget" name="budget" required>
+              <option value="">Select a range</option>
+              <option value="1000-5000">$1,000 - $5,000</option>
+              <option value="5000-10000">$5,000 - $10,000</option>
+              <option value="10000-20000">$10,000 - $20,000</option>
+              <option value="20000+">$20,000+</option>
+            </select>
+          </div>
+
+          <!-- Textarea -->
+          <div class="form-group">
+            <label for="message"
+              >Message: <span class="required">*</span></label
+            >
             <textarea
               id="message"
               name="message"
               rows="5"
-              placeholder="Your message"
+              placeholder="Tell me about your project..."
               required
+              minlength="10"
             ></textarea>
           </div>
 
-          <!-- Form Buttons -->
+          <!-- Read-only Input -->
+          <div class="form-group">
+            <label for="timestamp">Submission Time:</label>
+            <input
+              type="text"
+              id="timestamp"
+              name="timestamp"
+              value="2024-01-15 10:30:00"
+              readonly
+            />
+          </div>
+
+          <!-- Disabled Input -->
+          <div class="form-group">
+            <label for="user-id">User ID:</label>
+            <input
+              type="text"
+              id="user-id"
+              name="user-id"
+              value="USER12345"
+              disabled
+            />
+          </div>
+
+          <!-- Submit and Reset Buttons -->
           <div class="form-buttons">
-            <button type="submit" class="btn btn-primary">Send Message</button>
-            <button type="reset" class="btn btn-secondary">Reset</button>
+            <button type="submit" class="btn btn-primary">
+              <i class="fas fa-paper-plane"></i> Submit
+            </button>
+            <button type="reset" class="btn btn-secondary">
+              <i class="fas fa-redo"></i> Reset
+            </button>
           </div>
         </form>
       </div>
     </section>
+
+    <!-- FOOTER SECTION -->
     <footer class="footer">
-      <div class="container footer-content">
-        <!-- Column 1: About -->
-        <div class="footer-column">
-          <h4>About Me</h4>
-          <p>
-            Passionate web developer creating responsive and modern websites.
-            Skilled in HTML, CSS, JavaScript, and more.
-          </p>
-        </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h4>About</h4>
+            <p>
+              A comprehensive HTML5 & CSS3 project demonstrating all major
+              concepts.
+            </p>
+          </div>
 
-        <!-- Column 2: Quick Links -->
-        <div class="footer-column">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#media">Media</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
+          <div class="footer-column">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
 
-        <!-- Column 3: Social -->
-        <div class="footer-column">
-          <h4>Follow Me</h4>
-          <div class="social-icons">
-            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+          <div class="footer-column">
+            <h4>Social Media</h4>
+            <div class="social-icons">
+              <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+              <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="footer-bottom">
-        &copy; 2025 Your Name. All Rights Reserved.
+        <div class="footer-bottom">
+          <p>&copy; 2024 MyPortfolio. All rights reserved.</p>
+        </div>
       </div>
     </footer>
   </body>
